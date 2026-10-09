@@ -24,6 +24,7 @@ try {
   }
 } catch { /* Keep unannounced publication metadata empty. */ }
 await fs.writeFile(path.join(output,'index.html'),html);
+await fs.copyFile(path.join(root,'CNAME'), path.join(output,'CNAME'));
 await fs.cp(path.join(root,'assets','web'), path.join(output,'assets','web'), {recursive:true});
 for (const file of await fs.readdir(path.join(root,'assets','png'))) {
   await fs.copyFile(path.join(root,'assets','png',file), path.join(output,'assets','png',file));

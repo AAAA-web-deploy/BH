@@ -19,5 +19,5 @@ window.BOTHR_CONFIG = {
     telegram: '',
     x: ''
   },
-  siteUrl: ''
+  siteUrl: 'https://bothr.online'
 };
