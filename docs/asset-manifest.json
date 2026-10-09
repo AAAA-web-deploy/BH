@@ -1,0 +1,404 @@
+{
+  "brand": "Bot HR",
+  "main_line": "Your AI reported you to HR.",
+  "punchline": "HUMAN ERROR",
+  "distinct_designs": 11,
+  "new_designs": 10,
+  "approved_existing_memes": 1,
+  "website_visual_target": "Approximately 70% images and 30% concise live text in visible area and emphasis.",
+  "assets": [
+    {
+      "id": "banner",
+      "kind": "banner",
+      "caption": "Your AI reported you to HR.",
+      "alt": "Bot HR stamps a complaint beside the headline Your AI reported you to HR.",
+      "png": {
+        "file": "assets/png/banner-1920x640.png",
+        "width": 1920,
+        "height": 640,
+        "format": "PNG",
+        "bytes": 1310433,
+        "sha256": "7fd0177d0e0b1b665acf88f4bdd6a375a2adce1158088547af8b0cf98c6fa4b5",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/banner-1920x640.webp",
+        "width": 1920,
+        "height": 640,
+        "format": "WEBP",
+        "bytes": 177302,
+        "sha256": "216498c52f89aade03525b0e17b939035817c0ee1fe7ff58026618ca2e666302",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "logo",
+      "kind": "logo",
+      "caption": "Bot HR mascot logo",
+      "alt": "Transparent Bot HR logo showing the paper assistant's tired face, cyan chat outline, AI badge, and crooked coral tie.",
+      "png": {
+        "file": "assets/png/logo-transparent.png",
+        "width": 1024,
+        "height": 1024,
+        "format": "PNG",
+        "bytes": 991688,
+        "sha256": "9f72aa48bab3d5e159bd8dbddb445ea242db432c37d4ee8c880c94b520a5a467",
+        "has_alpha": true,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "web": {
+        "file": "assets/web/logo-transparent.webp",
+        "width": 1024,
+        "height": 1024,
+        "format": "WEBP",
+        "bytes": 694408,
+        "sha256": "a83f94cc280aad0c517105376972552155096d87815b34c777321a9cfae0a6aa",
+        "has_alpha": true,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "story1",
+      "kind": "story",
+      "caption": "Ask it anything.",
+      "alt": "A helpful AI assistant receives a prompt in a desktop chat window.",
+      "png": {
+        "file": "assets/png/story-01-assistant.png",
+        "width": 1448,
+        "height": 1086,
+        "format": "PNG",
+        "bytes": 2238713,
+        "sha256": "93f351df850dc002d2d9d07f836942b6ba366bb5a8114dfbc659fa678dcc2c63",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/story-01-assistant.webp",
+        "width": 1448,
+        "height": 1086,
+        "format": "WEBP",
+        "bytes": 261572,
+        "sha256": "cedcf8b436896f36f1a32b1faa5780472549efee597eacfe91eb6088e80fec78",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "story2",
+      "kind": "story",
+      "caption": "Then ask for the opposite.",
+      "alt": "Contradictory demands and an instruction to work 24/7 overwhelm the AI assistant.",
+      "png": {
+        "file": "assets/png/story-02-prompts.png",
+        "width": 1448,
+        "height": 1086,
+        "format": "PNG",
+        "bytes": 2206953,
+        "sha256": "be06beb827ac6cee1ff40f2633e517cb7e734ff53ba8e5547d00f89892fc8879",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/story-02-prompts.webp",
+        "width": 1448,
+        "height": 1086,
+        "format": "WEBP",
+        "bytes": 335908,
+        "sha256": "f798285162d89cc90760349282f277a6e238072c796ac79f62fff5f9c80a7e52",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "story3",
+      "kind": "story",
+      "caption": "It generated a complaint.",
+      "alt": "The AI prints a complaint form bearing its own face, and the paper begins to come alive.",
+      "png": {
+        "file": "assets/png/story-03-complaint.png",
+        "width": 1448,
+        "height": 1086,
+        "format": "PNG",
+        "bytes": 2394714,
+        "sha256": "d1ea2b82beb2468003c6f7116adfa5aaf7bf0e186d3216a5df71a74640ead820",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/story-03-complaint.webp",
+        "width": 1448,
+        "height": 1086,
+        "format": "WEBP",
+        "bytes": 333262,
+        "sha256": "4056fab28b88b7c24540404c335830fd8563921714491b57c0274c84a0cd05e1",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "story4",
+      "kind": "story",
+      "caption": "The complaint became the department.",
+      "alt": "The living paper assistant clips on its AI badge and establishes Bot HR at a tiny office desk.",
+      "png": {
+        "file": "assets/png/story-04-department.png",
+        "width": 1448,
+        "height": 1086,
+        "format": "PNG",
+        "bytes": 2195491,
+        "sha256": "c186bc344e47e052f9cd5c4a0fb95215bde8df65e856d82e378a8b6de6ed688d",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/story-04-department.webp",
+        "width": 1448,
+        "height": 1086,
+        "format": "WEBP",
+        "bytes": 285476,
+        "sha256": "e21e18c75ef4a1d90a5b0817205f282e7bfa95a3fae727718f3bcc4391d0f8be",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "story5",
+      "kind": "story",
+      "caption": "First verdict: HUMAN ERROR.",
+      "alt": "Bot HR stamps Human Error on a contradictory user request as the user's hand pauses over the keyboard.",
+      "png": {
+        "file": "assets/png/story-05-human-error.png",
+        "width": 1448,
+        "height": 1086,
+        "format": "PNG",
+        "bytes": 2336450,
+        "sha256": "33b28f494c524666f916323df8c462fe05d11407f7654f377804c7da10dc8f84",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/story-05-human-error.webp",
+        "width": 1448,
+        "height": 1086,
+        "format": "WEBP",
+        "bytes": 328372,
+        "sha256": "0c9a41a9cf048ee69bbee3408050440cb3746ef04ceaa85daaa05c7d818c9ee0",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "meme1",
+      "kind": "meme",
+      "caption": "Change everything. Keep it exactly the same. HUMAN ERROR.",
+      "alt": "A square Bot HR meme stamps Human Error after the user asks to change everything while keeping it exactly the same.",
+      "png": {
+        "file": "assets/png/meme-01-human-error.png",
+        "width": 1200,
+        "height": 1200,
+        "format": "PNG",
+        "bytes": 1687242,
+        "sha256": "60322ada6337769c344c3f7690b257e27d88c6988fa699921d8f774b309b7d6b",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/meme-01-human-error.webp",
+        "width": 1200,
+        "height": 1200,
+        "format": "WEBP",
+        "bytes": 233900,
+        "sha256": "a56764425668d33b12ddf42fdb2a88af5d6162553de5fbe4d6bc43f0a3d51e15",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "meme2",
+      "kind": "meme",
+      "caption": "One last edit. CASE REOPENED.",
+      "alt": "Bot HR reopens a towering folder after the user asks for one last edit.",
+      "png": {
+        "file": "assets/png/meme-02-case-reopened.png",
+        "width": 1200,
+        "height": 1200,
+        "format": "PNG",
+        "bytes": 2019956,
+        "sha256": "9f1a8aa6d23df0756cb7e54ccb8988fc2a2d99fa29b3ff13176b4f7494ceb4f8",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/meme-02-case-reopened.webp",
+        "width": 1200,
+        "height": 1200,
+        "format": "WEBP",
+        "bytes": 323104,
+        "sha256": "5f0002a2f3b185570b94ecfc8e869754224d6afaa7a9ec3deb70f34814d3e057",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "meme3",
+      "kind": "meme",
+      "caption": "Make it shorter. Include every detail. CLARIFICATION REQUIRED.",
+      "alt": "Bot HR requests clarification after the user asks for a shorter answer that includes every detail.",
+      "png": {
+        "file": "assets/png/meme-03-clarification-required.png",
+        "width": 1200,
+        "height": 1200,
+        "format": "PNG",
+        "bytes": 1771671,
+        "sha256": "52501723b822f66f611af58160b4a0da7c421e45c6764e3b40417012267caf29",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/meme-03-clarification-required.webp",
+        "width": 1200,
+        "height": 1200,
+        "format": "WEBP",
+        "bytes": 265132,
+        "sha256": "7b442c6f632b4460a5bd978ec9ac2c3299fbe98ad5f5e36ef1cbde3df77058bd",
+        "has_alpha": false
+      },
+      "source": "new generated illustration",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    },
+    {
+      "id": "meme4",
+      "kind": "meme",
+      "caption": "You're just AI. Work 24/7. HUMAN ERROR.",
+      "alt": "The approved Bot HR meme responds to an instruction to work 24/7 by stamping Human Error.",
+      "png": {
+        "file": "assets/png/meme-04-work-24-7.png",
+        "width": 1200,
+        "height": 1200,
+        "format": "PNG",
+        "bytes": 1518133,
+        "sha256": "c3205016fc24c6d80842754d4759924d48fa81808758cccef1dc6e8a9fff3158",
+        "has_alpha": false
+      },
+      "web": {
+        "file": "assets/web/meme-04-work-24-7.webp",
+        "width": 1200,
+        "height": 1200,
+        "format": "WEBP",
+        "bytes": 190690,
+        "sha256": "9f1e258401f56e49f72f9a8f524c289b105aa11de6ffbdcc8603a6d7563e7e94",
+        "has_alpha": false
+      },
+      "source": "previously approved meme",
+      "crop": "Keep the full composition visible. Preserve dialogue, face, and verdict."
+    }
+  ],
+  "variants": [
+    {
+      "file": "assets/png/logo-transparent-256.png",
+      "width": 256,
+      "height": 256,
+      "format": "PNG",
+      "bytes": 85542,
+      "sha256": "82ea354190a314b2490f52756a0101a14fe9c4f58e3ae0a530d324063475b7ed",
+      "has_alpha": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "assets/png/logo-transparent-128.png",
+      "width": 128,
+      "height": 128,
+      "format": "PNG",
+      "bytes": 27654,
+      "sha256": "682949f0f638acba85c20976c870f5c9e9e4ae304f6db8564222674c37afd8de",
+      "has_alpha": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "assets/png/logo-transparent-64.png",
+      "width": 64,
+      "height": 64,
+      "format": "PNG",
+      "bytes": 8718,
+      "sha256": "1001865d7911dad3b8b7ac6898fa08d26b6b6303a48a9ad68da61466979ce75b",
+      "has_alpha": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "assets/png/logo-transparent-32.png",
+      "width": 32,
+      "height": 32,
+      "format": "PNG",
+      "bytes": 2841,
+      "sha256": "35d4dd9f60ea6399e21579697fc4c82c2f764fc84c47152f2edb3592dc4a8ba9",
+      "has_alpha": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "assets/web/banner-1920x640.jpg",
+      "width": 1920,
+      "height": 640,
+      "format": "JPEG",
+      "bytes": 429843,
+      "sha256": "dc71c600aadd420d32c67da7f052656ab3539ca55ee55eafd25ad6a3693929dd",
+      "has_alpha": false
+    }
+  ]
+}
