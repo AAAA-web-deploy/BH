@@ -26,27 +26,55 @@
     clearTimeout(toastTimer);
     toastTimer = setTimeout(function () { toast.classList.remove('visible'); }, 2400);
   }
-  async function copyText(text) {
-    try {
-      if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(text);
-      } else {
-        const field = document.createElement('textarea');
-        field.value = text;
-        field.style.position = 'fixed';
-        field.style.left = '-9999px';
-        document.body.appendChild(field);
-        field.select();
-        const copied = document.execCommand('copy');
-        field.remove();
-        if (!copied) throw new Error('Copy unavailable');
-      }
-      notify('Copied.');
-    } catch (_) { notify('Copy unavailable. Select the text and copy it manually.'); }
+  function copyWithFallback(text) {
+    const field = document.createElement('textarea');
+    field.value = text;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.top = '0';
+    field.style.left = '0';
+    field.style.width = '1px';
+    field.style.height = '1px';
+    field.style.opacity = '0';
+    document.body.appendChild(field);
+    field.focus();
+    field.select();
+    field.setSelectionRange(0, field.value.length);
+    let copied = false;
+    try { copied = document.execCommand('copy'); } catch (_) { copied = false; }
+    field.remove();
+    return copied;
+  }
+  function copyText(text) {
+    const fallbackOk = copyWithFallback(text);
+    const finish = function (copied) {
+      notify(copied ? 'Copied.' : 'Copy unavailable. Select the text and copy it manually.');
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { finish(true); }).catch(function () { finish(fallbackOk); });
+      return;
+    }
+    finish(fallbackOk);
   }
   function openDialog(dialog) {
     if (!dialog.open) dialog.showModal();
     document.body.classList.add('modal-open');
+  }
+  const socialIcons = {
+    Telegram: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.8 4.3 18.7 19.1c-.2.9-1 .1-1.4-.4l-4.1-3.1-2 1.9c-.2.2-.4.4-.8.4l.3-4.3L18.2 6c.3-.3 0-.5-.4-.2L8.4 13.1 4.2 11.8c-.9-.3-.9-.9.2-1.3L20.6 3.6c.8-.3 1.5.2 1.2.7Z"/></svg>',
+    X: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.2 2.2h3.2l-7 8 8.2 10.9h-6.4l-5-6.6-5.8 6.6H2.2l7.5-8.5L1.8 2.2h6.6l4.5 6 5.3-6Zm-1.1 17h1.8L7.1 4H5.2l11.9 15.2Z"/></svg>'
+  };
+  function iconLink(label, value) {
+    const href = safeUrl(value);
+    if (!href || !socialIcons[label]) return null;
+    const a = document.createElement('a');
+    a.className = 'icon-button';
+    a.href = href;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.setAttribute('aria-label', label);
+    a.innerHTML = socialIcons[label];
+    return a;
   }
   function linkButton(label, value) {
     const href = safeUrl(value);
@@ -82,7 +110,11 @@
     });
     $('#launch-status').textContent = config.launchStatus || 'Launch details pending';
     $('#contract-address').textContent = address || 'Not announced yet';
-    $('#copy-contract').disabled = !address;
+    $('#copy-contract').disabled = false;
+    [['Telegram', links.telegram], ['X', links.x]].forEach(function (entry) {
+      const icon = iconLink(entry[0], entry[1]);
+      if (icon) $('#headline-social').appendChild(icon);
+    });
     if (address) {
       const explorer = linkButton('Etherscan', 'https://etherscan.io/token/' + address);
       $('#token-links').appendChild(explorer);
@@ -158,7 +190,10 @@
     });
     dialog.querySelector('[data-close]').addEventListener('click', function () { dialog.close(); });
   });
-  $('#copy-contract').addEventListener('click', function () { if (address) copyText(address); });
+  $('#copy-contract').addEventListener('click', function () {
+    if (address) copyText(address);
+    else notify('Contract address is not announced yet.');
+  });
   $('#meme-copy').addEventListener('click', function () { if (activeMeme) copyText(activeMeme.caption); });
   buildFacts();
   buildMemes();

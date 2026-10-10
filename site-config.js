@@ -15,8 +15,8 @@ window.BOTHR_CONFIG = {
     buy: '',
     dexscreener: '',
     dextools: '',
-    telegram: '',
-    x: ''
+    telegram: 'https://t.me/aibothr',
+    x: 'https://x.com/bothr_eth'
   },
   siteUrl: 'https://bothr.online'
 };
