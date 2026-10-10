@@ -4,7 +4,7 @@ window.BOTHR_CONFIG = {
   ticker: 'BH',
   network: 'Ethereum',
   chainId: 1,
-  contractAddress: '',
+  contractAddress: '0x3072c3b52beec9e66283ab1d124c1b2aed1f69da',
   launchStatus: 'Launch details pending',
   supply: '1,000,000,000',
   buyTax: '0',
