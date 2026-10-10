@@ -1,17 +1,16 @@
 // Edit this file when final project information is available.
-// BOTHR was the proposed ticker; leave this field empty until confirmed.
 window.BOTHR_CONFIG = {
   name: 'Bot HR',
-  ticker: '',
+  ticker: 'BH',
   network: 'Ethereum',
   chainId: 1,
   contractAddress: '',
   launchStatus: 'Launch details pending',
-  supply: '',
-  buyTax: '',
-  sellTax: '',
-  liquidityStatus: '',
-  ownershipStatus: '',
+  supply: '1,000,000,000',
+  buyTax: '0',
+  sellTax: '0',
+  liquidityStatus: 'burn',
+  ownershipStatus: 'Renounce',
   links: {
     buy: '',
     dexscreener: '',
